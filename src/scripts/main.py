@@ -15,7 +15,7 @@ kafka_pass = 'de-kafka-admin-2022'
 kafka_security_options = {
     'kafka.security.protocol': 'SASL_SSL',
     'kafka.sasl.mechanism': 'SCRAM-SHA-512',
-    'kafka.sasl.jaas.config': 'org.apache.kafka.common.security.scram.ScramLoginModule required username="{kafka_user}" password="{kafka_pass}";',
+    'kafka.sasl.jaas.config': f'org.apache.kafka.common.security.scram.ScramLoginModule required username="{kafka_user}" password="{kafka_pass}";',
 }
 
 postgresql_settings = {
